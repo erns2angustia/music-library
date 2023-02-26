@@ -1,0 +1,23 @@
+{
+  "name": "music-library",
+  "version": "1.0.0",
+  "description": "Hello! Welcome to my Music-Library Repository where I try to learn more about back-end programming. Feel free to reach out if you have any suggestions as I am a newbie.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erns2angustia/music-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erns2angustia/music-library/issues"
+  },
+  "homepage": "https://github.com/erns2angustia/music-library#readme",
+  "devDependencies": {
+    "eslint": "^8.35.0"
+  }
+}
