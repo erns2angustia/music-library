@@ -1,5 +1,5 @@
 services:
-  - type: web
+    type: web
     name: music-library-2.0
     env: node
     region: frankfurt
