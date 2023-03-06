@@ -23,10 +23,6 @@ services:
       fromDatabase: 
       name: music-library-database-2.0
       property: host
-      key: PGPORT
-      fromDatabase: 
-      name: music-library-database-2.0
-      property: port
   databases:
     name: music-library-2.0
     plan: free
