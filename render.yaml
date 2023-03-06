@@ -27,6 +27,7 @@ services:
       fromDatabase: 
       name: music-library-database-ea
       property: port
+      key: PGPORT
   databases:
     name: music-library-database-ea
     plan: free
