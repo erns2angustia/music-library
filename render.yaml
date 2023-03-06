@@ -6,8 +6,7 @@ services:
     plan: free
     buildCommand: npm ci
     startCommand: npm run migrate && node index.js
-    envVars:
-      - key: PGDATABASE
+    envVars: - key: PGDATABASE
       fromDatabase: music-library-database-2.0
       property: database
       - key: PGUSER
