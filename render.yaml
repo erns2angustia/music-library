@@ -20,7 +20,8 @@ services:
       name: music-library-database-ea
       property: password
      - key: PGHOST
-      fromDatabase: music-library-database-ea
+      fromDatabase: 
+      name: music-library-database-ea
       property: host
      - key: PGPORT
       fromDatabase:
