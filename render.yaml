@@ -1,6 +1,6 @@
 services:
     type: web
-    name: music-library
+    name: music-library-ea
     env: node
     region: frankfurt
     plan: free
@@ -28,7 +28,7 @@ services:
       name: music-library
       property: port
   databases:
-    name: music-library
+    name: music-library-database-ea
     plan: free
     region: frankfurt
     databaseName: music_library_dev
