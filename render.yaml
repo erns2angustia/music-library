@@ -1,5 +1,5 @@
 services:
-    type: web
+   - type: web
     name: music-library-ea
     env: node
     region: frankfurt
@@ -7,29 +7,28 @@ services:
     buildCommand: npm ci
     startCommand: npm run migrate && node index.js
     envVars:
-      key: PGDATABASE
+     - key: PGDATABASE
       fromDatabase: 
       name: music-library-database-ea
       property: database
-      key: PGUSER
+     - key: PGUSER
       fromDatabase: 
       name: music-library-database-ea
       property: user
-      key: PGPASSWORD
+     - key: PGPASSWORD
       fromDatabase: 
       name: music-library-database-ea
       property: password
-      key: PGHOST
+     - key: PGHOST
       fromDatabase: 
       name: music-library-database-ea
       property: host
-      key: PGPORT
+     - key: PGPORT
       fromDatabase: 
       name: music-library-database-ea
       property: port
-      key: PGPORT
   databases:
-    name: music-library-database-ea
+   - name: music-library-database-ea
     plan: free
     region: frankfurt
     databaseName: music_library_dev
