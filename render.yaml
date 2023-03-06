@@ -29,7 +29,7 @@ services:
       property: port
 
   databases:
-    - name: music-library-2.0
+    name: music-library-2.0
     plan: free
     region: frankfurt
     databaseName: music_library_dev
