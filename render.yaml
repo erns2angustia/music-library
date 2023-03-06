@@ -9,23 +9,23 @@ services:
     envVars:
       key: PGDATABASE
       fromDatabase: 
-      name: music-library
+      name: music-library-database-ea
       property: database
       key: PGUSER
       fromDatabase: 
-      name: music-library
+      name: music-library-database-ea
       property: user
       key: PGPASSWORD
       fromDatabase: 
-      name: music-library
+      name: music-library-database-ea
       property: password
       key: PGHOST
       fromDatabase: 
-      name: music-library
+      name: music-library-database-ea
       property: host
       key: PGPORT
       fromDatabase: 
-      name: music-library
+      name: music-library-database-ea
       property: port
   databases:
     name: music-library-database-ea
