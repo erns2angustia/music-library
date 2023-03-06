@@ -7,23 +7,23 @@ services:
     buildCommand: npm ci
     startCommand: npm run migrate && node index.js
     envVars:
-      - key: PGDATABASE
+      key: PGDATABASE
       fromDatabase: 
       name: music-library-database-2.0
       property: database
-      - key: PGUSER
+      key: PGUSER
       fromDatabase: 
       name: music-library-database-2.0
       property: user
-      - key: PGPASSWORD
+      key: PGPASSWORD
       fromDatabase: 
       name: music-library-database-2.0
       property: password
-      - key: PGHOST
+      key: PGHOST
       fromDatabase: 
       name: music-library-database-2.0
       property: host
-      - key: PGPORT
+      key: PGPORT
       fromDatabase: 
       name: music-library-database-2.0
       property: port
