@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: music-library-2.0
+    env: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm run migrate && node index.js
+    envVars:
+      - key: PGDATABASE
+      fromDatabase: music-library-database-2.0
+      property: database
+      - key: PGUSER
+      fromDatabase: music-library-database-2.0
+      property: user
+      - key: PGPASSWORD
+      fromDatabase: music-library-database-2.0
+      property: password
+      - key: PGHOST
+      fromDatabase: music-library-database-2.0
+      property: host
+      - key: PGPORT
+      fromDatabase: music-library-database-2.0
+      property: port
+
+  databases:
+    - name: music-library-2.0
+    plan: free
+    region: frankfurt
+    databaseName: music_library_dev
+    ipAllowList: []
