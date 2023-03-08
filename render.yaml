@@ -27,9 +27,9 @@ services:
           fromDatabase:
                 name: music-library-database-ea
                 property: port
-databases:
-    - name: music-library-database-ea
-    plan: free
-    region: frankfurt
-    databaseName: music_library_dev
-    ipAllowList: []
+    - databases:
+        name: music-library-database-ea
+        plan: free
+        region: frankfurt
+        databaseName: music_library_dev
+        ipAllowList: []
