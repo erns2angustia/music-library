@@ -8,23 +8,23 @@ services:
     startCommand: npm run migrate && node index.js
     envVars:
         - key: PGDATABASE
-            fromDatabase: 
+          fromDatabase: 
                 name: music-library-database-ea
                 property: database
         - key: PGUSER
-            fromDatabase:
+          fromDatabase:
                 name: music-library-database-ea
                 property: user
         - key: PGPASSWORD
-            fromDatabase:
+          fromDatabase:
                 name: music-library-database-ea
                 property: password
         - key: PGHOST
-            fromDatabase: 
+          fromDatabase: 
                 name: music-library-database-ea
                 property: host
         - key: PGPORT
-            fromDatabase:
+          fromDatabase:
                 name: music-library-database-ea
                 property: port
 databases:
