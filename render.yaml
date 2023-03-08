@@ -1,32 +1,32 @@
-- services:
-type: web
-name: music-library-ea
-env: node
-region: frankfurt
-plan: free
-buildCommand: npm ci
-startCommand: npm run migrate && node index.js
-envVars:
-- key: PGDATABASE
-    fromDatabase: 
-        name: music-library-database-ea
-        property: database
-- key: PGUSER
-    fromDatabase:
-        name: music-library-database-ea
-        property: user
-- key: PGPASSWORD
-    fromDatabase:
-        name: music-library-database-ea
-        property: password
-- key: PGHOST
-    fromDatabase: 
-        name: music-library-database-ea
-        property: host
-- key: PGPORT
-    fromDatabase:
-        name: music-library-database-ea
-        property: port
+services:
+  - type: web
+    name: music-library-ea
+    env: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm run migrate && node index.js
+    envVars:
+        - key: PGDATABASE
+            fromDatabase: 
+            name: music-library-database-ea
+            property: database
+        - key: PGUSER
+            fromDatabase:
+            name: music-library-database-ea
+            property: user
+        - key: PGPASSWORD
+            fromDatabase:
+            name: music-library-database-ea
+            property: password
+        - key: PGHOST
+            fromDatabase: 
+            name: music-library-database-ea
+            property: host
+        - key: PGPORT
+            fromDatabase:
+            name: music-library-database-ea
+            property: port
 databases:
     - name: music-library-database-ea
     plan: free
