@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 const { expect } = require('chai');
 const request = require('supertest');
-const db = require('../scr/db');
+const db = require('../src/db');
 const app = require('../src/app');
 
 describe('Delete Album', () => {
