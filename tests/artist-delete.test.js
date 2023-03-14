@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // tests/artist-delete.test.js
 const { expect } = require('chai');
 const request = require('supertest');
